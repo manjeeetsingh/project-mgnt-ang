@@ -1,0 +1,11 @@
+<div class="container w-50">
+  <h3 display-3 class="text-center text-uppercase">TOP Projects</h3>
+  <ul class="list-group">
+    <li
+      class="list-group-item list-group-item-dark text-center text-uppercase"
+      *ngFor="let project of projectList"
+    >
+      {{ project.projectName }}
+    </li>
+  </ul>
+</div>
