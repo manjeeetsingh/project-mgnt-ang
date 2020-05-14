@@ -7,6 +7,19 @@ import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { SignupComponent } from './signup/signup.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { FooterComponent } from './footer/footer.component';
+import { ProjectComponent } from './project/project.component';
+import { EpicComponent } from './epic/epic.component';
+import { FeatureComponent } from './feature/feature.component';
+import { RiskComponent } from './risk/risk.component';
+import { CapacityComponent } from './capacity/capacity.component';
+import { DependenciesComponent } from './dependencies/dependencies.component';
+import { PieComponent } from './pie/pie.component';
+import { SprintComponent } from './sprint/sprint.component';
+import { UserStoryComponent } from './user-story/user-story.component';
+import { BugComponent } from './bug/bug.component';
+import { TaskComponent } from './task/task.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +27,20 @@ import { SignupComponent } from './signup/signup.component';
     HeaderComponent,
     LoginComponent,
     HomeComponent,
-    SignupComponent
+    SignupComponent,
+    PageNotFoundComponent,
+    FooterComponent,
+    ProjectComponent,
+    EpicComponent,
+    FeatureComponent,
+    RiskComponent,
+    CapacityComponent,
+    DependenciesComponent,
+    PieComponent,
+    SprintComponent,
+    UserStoryComponent,
+    BugComponent,
+    TaskComponent
   ],
   imports: [
     BrowserModule,
