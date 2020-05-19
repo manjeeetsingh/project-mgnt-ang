@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,7 +22,8 @@ import { SprintComponent } from './sprint/sprint.component';
 import { UserStoryComponent } from './user-story/user-story.component';
 import { BugComponent } from './bug/bug.component';
 import { TaskComponent } from './task/task.component';
-
+import { SpinnerComponent } from './spinner/spinner.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,8 +44,17 @@ import { TaskComponent } from './task/task.component';
     UserStoryComponent,
     BugComponent,
     TaskComponent,
+    SpinnerComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    NgxSpinnerModule,
+  ],
+
   providers: [],
   bootstrap: [AppComponent],
 })

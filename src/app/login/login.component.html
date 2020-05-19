@@ -29,4 +29,9 @@
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
+  <div class="alert alert-danger" *ngIf="error">
+    <h3>{{ error }}</h3>
+    <button class="btn btn-danger" (click)="onHandleError()">Ok</button>
+  </div>
 </div>
+<app-spinner></app-spinner>
